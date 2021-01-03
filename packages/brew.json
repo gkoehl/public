@@ -1,9 +1,15 @@
 {
     "default": [
+        "asdf",
+        "bash",
+        "curl",
+        "git",
+        "jq"
     ],
     "_": [
         "ant",
         "anyenv",
+        "asdf",
         "autoconf",
         "autojump",
         "awscli",
