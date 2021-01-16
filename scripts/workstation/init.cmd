@@ -2,10 +2,6 @@ echo off
 
 goto() {
 # Linux
-# notes:
-# - run using:
-#   `sh -c "$(curl -fsSL https://raw.githubusercontent.com/gkoehl/public/master/scripts/workstation/init.cmd)"`
-
 readonly UNAME_OUT="$(uname -s)"
 echo ${UNAME_OUT}
 case "${UNAME_OUT}" in
