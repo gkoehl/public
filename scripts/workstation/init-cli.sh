@@ -14,6 +14,11 @@ set -o pipefail
 # unzip awscliv2.zip
 # sudo ./aws/install
 
+# asdf plugin add python
+# asdf install python latest
+# pip install --upgrade pip
+# pip install pipenv
+
 # git clone <repo>
 # cd <repo>
 # asdf install
