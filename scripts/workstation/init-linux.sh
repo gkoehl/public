@@ -19,7 +19,7 @@ apt-get update \
 ################################################################################
 # MANAGERS: VERSIONS
 ################################################################################
-if [[ ! -n $(which asdf) ]]; then
+if [[ ! -x $(which asdf) ]]; then
   git clone https://github.com/asdf-vm/asdf.git ${HOME}/.asdf
   cd ${HOME}/.asdf
   git checkout "$(git describe --abbrev=0 --tags)"
