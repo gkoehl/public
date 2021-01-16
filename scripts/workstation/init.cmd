@@ -12,6 +12,7 @@ case "${UNAME_OUT}" in
   Linux*)
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gkoehl/public/master/scripts/workstation/init-linux.sh)"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gkoehl/public/master/scripts/workstation/init-filesystem.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gkoehl/public/master/scripts/workstation/init-cli.sh)"
   ;;
   Darwin*)
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/gkoehl/public/master/scripts/workstation/init-mac.sh)"
