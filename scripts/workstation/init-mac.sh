@@ -5,31 +5,26 @@ set -o pipefail
 ################################################################################
 # PREFERENCES
 ################################################################################
-# # CONFIGURE
-# # CONFIGURE: OS
+# # chflags nohidden ~/Library
 # defaults -currentHost write com.apple.finder AppleShowAllFiles YES
+# defaults -currentHost write com.apple.finder ShowPathbar -bool true
+# defaults -currentHost write com.apple.finder ShowStatusBar -bool true
 # defaults -currentHost write com.apple.finder CreateDesktop -bool false
 # defaults -currentHost write -g com.apple.mouse.tapBehavior -int 1
 # defaults -currentHost write com.apple.dock autohide -bool true
 # defaults -currentHost write -g InitialKeyRepeat -int 15
 # defaults -currentHost write -g KeyRepeat -int 2
-# # defaults -currentHost write -g com.apple.swipescrolldirection -bool false
-# # TODO: Add in show in titlebar
-# # TODO: Set alert volume
+# defaults -currentHost write -g com.apple.swipescrolldirection -bool false
 # killall Dock
 # killall Finder
-# # CONFIGURE: GIT
+# TODO: Add in show in titlebar
+# TODO: Set alert volume
+# # terminal setup (theme, window size)
+# # 
+# # git setup
 # git config --global credential.helper cache
 # git config --global user.name ""
 # git config --global user.email ""
-
-# chflags nohidden ~/Library
-# # Show hidden files:
-# defaults write com.apple.finder AppleShowAllFiles YES
-# # Show path bar:
-# defaults write com.apple.finder ShowPathbar -bool true
-# # Show status bar:
-# defaults write com.apple.finder ShowStatusBar -bool true
 # # Go to System Preferences for the following:
 # # Keyboard > Text > Disable “Correct spelling automatically”
 # # Security and Privacy > Firewall > On
