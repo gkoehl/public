@@ -19,9 +19,10 @@ apt-get update \
 ################################################################################
 # MANAGERS: VERSIONS
 ################################################################################
-if [[ ! -x $(which asdf) ]]; then
-  git clone https://github.com/asdf-vm/asdf.git ${HOME}/.asdf
-  cd ${HOME}/.asdf
+readonly tmp_asdf_path=${HOME}/.asdf
+if [[ ! -d "${tmp_asdf_path}" ]]; then
+  git clone https://github.com/asdf-vm/asdf.git ${tmp_asdf_path}
+  cd ${tmp_asdf_path}
   git checkout "$(git describe --abbrev=0 --tags)"
   cd ${OLDPWD}
 fi
