@@ -31,25 +31,25 @@ if [[ -x $(which zsh) ]]; then
     fi
 fi
 
-################################################################################
-# FS: GKFS
-################################################################################
-readonly GKFS_NAME="gkfs"
-readonly GKFS_PATH="${HOME}/.${GKFS_NAME}"
+# ################################################################################
+# # FS: GKS
+# ################################################################################
+# readonly GKS_NAME="gks"
+# readonly GKS_PATH="${HOME}/.${GKS_NAME}"
 
-if [[ ! -x $(which gkfs) ]]; then
-    git clone https://github.com/gkoehl/gkfs.git ${GKFS_PATH}
-    # # NOTE: add if using tags for versioning
-    # cd ${GKFS_PATH}
-    # git checkout "$(git describe --abbrev=0 --tags)"
-    # cd ${OLDPWD}
+# if [[ ! -x $(which gks) ]]; then
+#     git clone git@github.com-github_gkoehl2:gkoehl2/gks.git ${GKS_PATH}
+#     # # NOTE: add if using tags for versioning
+#     # cd ${GKS_PATH}
+#     # git checkout "$(git describe --abbrev=0 --tags)"
+#     # cd ${OLDPWD}
 
-    # # NOTE: add to .zshrc or custom.zsh
-    # . ${HOME}/.${GKFS_NAME}/${GKFS_NAME}.sh
-    # fpath=(${GKFS_PATH}/completions ${fpath})
-    # autoload -Uz compinit
-    # compinit
-fi
+#     # # NOTE: add to .zshrc or custom.zsh
+#     # . ${HOME}/.${GKS_NAME}/${GKS_NAME}.sh
+#     # fpath=(${GKS_PATH}/completions ${fpath})
+#     # autoload -Uz compinit
+#     # compinit
+# fi
 
 ################################################################################
 # EXIT
