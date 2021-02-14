@@ -33,6 +33,7 @@
         "make",
         "openjdk-11-jre",
         "pkg-config",
+        "shellcheck",
         "ssh",
         "tk-dev",
         "unzip",

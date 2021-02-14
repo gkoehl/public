@@ -20,7 +20,6 @@ set -o pipefail
 # TODO: Add in show in titlebar
 # TODO: Set alert volume
 # # terminal setup (theme, window size)
-# # 
 # # git setup
 # git config --global credential.helper cache
 # git config --global user.name ""
@@ -39,7 +38,7 @@ if [[ ! -n $(which brew) ]]; then
 fi
 
 PACKAGES_BREW=(
-  $(curl -fsSL https://raw.githubusercontent.com/gkoehl/public/master/packages/brew.json | jq -r ".default | @sh")
+  $(curl -fsSL https://raw.githubusercontent.com/gkoehl/public/master/packages/brew.json | jq -r ".default | @sh" | tr -d \')
 )
 brew install \
     "${PACKAGES_BREW[@]}"

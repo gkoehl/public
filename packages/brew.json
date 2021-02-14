@@ -1,6 +1,6 @@
 {
     "default": [
-        "asdf",
+        "coreutils",
         "bash",
         "curl",
         "git",
@@ -41,6 +41,7 @@
         "pre-commit",
         "pyenv",
         "readline",
+        "shellcheck",
         "sqlite",
         "syncthing",
         "terraform",
