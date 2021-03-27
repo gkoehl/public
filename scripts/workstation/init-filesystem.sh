@@ -38,7 +38,7 @@ fi
 # readonly GKS_PATH="${HOME}/.${GKS_NAME}"
 
 # if [[ ! -x $(which gks) ]]; then
-#     git clone git@github.com-github_gkoehl2:gkoehl2/gks.git ${GKS_PATH}
+#     git clone git@github.com-gkoehl2:gkoehl/gks.git ${GKS_PATH}
 #     # # NOTE: add if using tags for versioning
 #     # cd ${GKS_PATH}
 #     # git checkout "$(git describe --abbrev=0 --tags)"

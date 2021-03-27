@@ -3,6 +3,7 @@
         "apt-utils",
         "curl",
         "git",
+        "gpg",
         "jq",
         "vim",
         "zsh"

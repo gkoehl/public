@@ -4,6 +4,7 @@
         "bash",
         "curl",
         "git",
+        "gpg",
         "jq"
     ],
     "_": [
