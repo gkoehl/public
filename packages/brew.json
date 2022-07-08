@@ -47,6 +47,7 @@
         "syncthing",
         "terraform",
         "tflint",
+        "translate-shell",
         "tree",
         "warrensbox/tap/tfswitch",
         "watch",

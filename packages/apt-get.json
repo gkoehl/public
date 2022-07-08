@@ -37,6 +37,7 @@
         "shellcheck",
         "ssh",
         "tk-dev",
+        "translate-shell",
         "unzip",
         "wget",
         "xz-utils",
