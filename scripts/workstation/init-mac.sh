@@ -14,7 +14,6 @@ set -o pipefail
 # defaults -currentHost write com.apple.dock autohide -bool true
 # defaults -currentHost write -g InitialKeyRepeat -int 15
 # defaults -currentHost write -g KeyRepeat -int 2
-# defaults -currentHost write -g com.apple.swipescrolldirection -bool false
 # killall Dock
 # killall Finder
 # TODO: Add in show in titlebar
@@ -29,12 +28,14 @@ set -o pipefail
 # # Security and Privacy > Firewall > On
 # # Security and Privacy > General > Allow App Store and identified developers
 # # File Sharing > Off
+# # TODO: scroll:setdirection, dock:left|setup_apps, screensaver:off|hotcorners, accounts:signout, notifications, chrome:default, menubar:bluetooth|sound, updates:automatic, 
 
 ################################################################################
 # MANAGERS: PACKAGES
 ################################################################################
 if [[ ! -n $(which brew) ]]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    # sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 PACKAGES_BREW=(
@@ -51,6 +52,7 @@ if [[ ! -n $(which asdf) ]]; then
   cd ${HOME}/.asdf
   git checkout "$(git describe --abbrev=0 --tags)"
   cd ${OLDPWD}
+  # # TODO: asdf:plugin_add
 fi
 
 ################################################################################
